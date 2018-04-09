@@ -178,6 +178,10 @@
 	.twoline{
 		padding-bottom:1.4in;
 	}
+
+	ol{
+		padding-left:1.5em;
+	}
 </style>
 </head>
 <body>
@@ -190,7 +194,14 @@
 </header>
 <section class="first">
 	<h1>Cellular Automata</h1>
-	<p>A cellular automaton is a mathematical model based around a rectangular grid of cells, each of which can be in one of two states: <em>on</em> or <em>off</em>. In 1970, John Conway popularized a specific version that he referred to as the <em>Game of Life</em>.</p>
+	<p>A cellular automaton is a mathematical model based around a rectangular grid of cells, each of which can be in one of two states: <em>live</em> or <em>dead</em>. In 1970, John Conway popularized a specific version that he referred to as the <em>Game of Life</em>.</p>
+	<p>Conway's 'game' gave each cell on the grid a specific set of rules:</p>
+	<ol type="1">
+		<li>Any live cell with fewer than two live neighbors dies</li>
+		<li>Any live cell with two or three live neighbors lives</li>
+		<li>Any live cell with more than three live neighbors dies</li>
+		<li>Any dead cell with exactly three live neighbors becomes alive</li>
+	</ol>
 </section>
 <section class="second">
 	<img src="./Screenshot2.png" class="screenshot">
