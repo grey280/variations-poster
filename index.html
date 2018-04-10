@@ -168,7 +168,7 @@
 	}
 	img{
 		float:left;
-		width:15in;
+		/*width:15in;*/
 		margin-bottom:.1in;
 	}
 
@@ -181,6 +181,15 @@
 
 	ol{
 		padding-left:1.5em;
+	}
+	ol li{
+		clear:left;
+	}
+	ol span{
+		text-align:center;
+	}
+	ol img{
+		display:inline;
 	}
 
 	.rulecolor.green{
@@ -208,10 +217,15 @@
 	<p>Conway's 'game' gave each cell on the grid a specific set of rules:</p>
 	<ol type="1">
 		<li>Any live cell with fewer than two live neighbors dies</li>
+		<img src="./rule1.png">
 		<li>Any live cell with two or three live neighbors lives</li>
+		<img src="./rule2.png">
 		<li>Any live cell with more than three live neighbors dies</li>
+		<img src="./rule3.png">
 		<li>Any dead cell with exactly three live neighbors becomes alive</li>
+		<img src="./rule4.png">
 	</ol>
+	<p></p>
 </section>
 <section class="second">
 	<img src="./Screenshot2.png" class="screenshot">
