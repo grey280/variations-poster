@@ -116,7 +116,9 @@
 		margin-right:.15in;
 		padding-right:.15in;
 		margin-bottom:.1in;
-		
+		border-bottom-width:5px;
+		border-bottom-color:white;
+		border-bottom-style: solid;
 		background-color:transparent !important;
 	}
 	span.poster, span.neuralnet, span.genreID, span.instID, span.mir{
@@ -246,7 +248,7 @@
 </section>
 <section class="third">
 	<h1>Audio Synthesis</h1>
-	<p>Each iteration of the Game of Life is linked to a synthesizer. (The properties of each synthesizer &mdash; waveform, envelope, and so on &mdash; are based on the color of the grid they're linked to.)</p>
+	<p>Each iteration of the Game of Life is linked to a synthesizer. (The visual properties of the grid create the auditory properties of the synthesizer: hue determines waveform, saturation the envelope, and so on.)</p>
 	<h2>Note Choice</h2>
 	<p>The grids determine which notes their respective synthesizers will play. The time determines the column; the state of the cells within each column determines the note. So, for example, at the very beginning, the <span class="highlight beige">frontmost synthesizer</span> will play a high note, <span class="highlight green">one towards the back</span> will play a low note, and <span class="highlight blue">one in the middle</span> will play a pair of medium-high notes.</p>
 	<h2>Chord Choice</h2>
