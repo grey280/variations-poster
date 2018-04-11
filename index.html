@@ -192,20 +192,24 @@
 		margin-left:2in;
 	}
 
-	.rulecolor.green{
-		color:#516910;
+	.highlight{
+		text-decoration: underline;
 	}
-	.rulecolor.blue{
-		color:#2c5872;
+
+	.highlight.green{
+		-webkit-text-decoration-color:#516910;
 	}
-	.rulecolor.beige{
-		color:#c49560;
+	.highlight.blue{
+		-webkit-text-decoration-color:#2c5872;
 	}
-	.rulecolor.pink{
-		color:#b1369b;
+	.highlight.beige{
+		-webkit-text-decoration-color:#c49560;
 	}
-	.rulecolor.red{
-		color:#a50510;
+	.highlight.pink{
+		-webkit-text-decoration-color:#b1369b;
+	}
+	.highlight.red{
+		-webkit-text-decoration-color:#a50510;
 	}
 </style>
 </head>
@@ -243,7 +247,15 @@
 </section>
 <section class="third">
 	<h1>Audio Synthesis</h1>
-	<p>Insert a description here! Definitely make use of the colors in the screenshot, that'll look cool.</p>
+	<p>Each iteration of the Game of Life is linked to a synthesizer. (The properties of each synthesizer &mdash; waveform, envelope, and so on &mdash; are based on the color of the grid they're linked to.)</p>
+	<p>The grids determine which notes their respective synthesizers will play. The time determines the column; the state of the cells within each column determines the note. So, for example, at the very beginning, the <span class="highlight beige">frontmost synthesizer</span> will play a high note, <span class="highlight green">one towards the back</span> will play a low note, and <span class="highlight blue">one in the middle</span> will play a pair of medium-high notes.</p>
+	<p><span class="highlight pink">One of the grids</span> plays a special role: determining which chord to play. This is not just a matter of a single column, but a combination of a single column and the grid as a whole; the soundscape responds to the 'landscape' of that game of life.</p>
+	<p></p>
+</section>
+<section class="third bottom">
+	<h1>References</h1>
+	<p>This project is based on the work of John Conway, first published in <em>Scientific American</em> in October 1970.</p>
+	<p>The project relies on Aurelius Prochazka's AudioKit framework, under the terms of the MIT License.</p>
 </section>
 </body>
 </html>
